@@ -1,9 +1,5 @@
 (function () {
     var myConnector = tableau.makeConnector();
-    myConnector.init = function(initCallback) {
-    initCallback();
-    tableau.submit();
-    };
 
     myConnector.getSchema = function (schemaCallback) {
       tableau.log("Hello WDC!");
